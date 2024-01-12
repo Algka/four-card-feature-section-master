@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Merriweather:wght@300;400&family=Overpass:wght@400;700&family=Poppins:wght@200;400;600&family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap");
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+  font-size: 15px;
+}
+@media (max-width: 574px) {
+  body .hide-for-mobile {
+    display: none;
+  }
+}
+@media (min-width: 1000px) {
+  body .hide-for-desktop {
+    display: none;
+  }
+}
+body h2 {
+  font-family: Poppins, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body p {
+  font-family: Poppins, sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+.flex-jc-c {
+  justify-content: center;
+}
+.flex-ai-c {
+  align-items: center;
+}
+.flex-jc-sb {
+  justify-content: space-between;
+}
+
+.container-desktop-box {
+  width: 1345px;
+  height: 550px;
+}
+.container-desktop-box .box-title {
+  width: 400px;
+  height: 200px;
+  margin-top: -330px;
+}
+.container-desktop-box .box-title .title1 {
+  width: 350px;
+  margin-left: 30px;
+  height: 50px;
+  font-size: 28px;
+  font-weight: 200;
+  color: hsl(229, 6%, 66%);
+}
+.container-desktop-box .box-title .title2 {
+  width: 350px;
+  margin-top: -40px;
+  height: 50px;
+  margin-left: 30px;
+  font-size: 28px;
+  font-weight: 600;
+}
+.container-desktop-box .box-title .title3 {
+  font-weight: 400;
+  color: hsl(229, 6%, 66%);
+  font-size: 12px;
+}
+
+.box-menu {
+  width: 1345px;
+  height: 800px;
+  margin-top: -350px;
+  display: grid;
+  margin-left: -40px;
+  grid-template-columns: repeat(4, 270px);
+  grid-template-rows: repeat(10, 25px);
+  row-gap: 30px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.box-menu p {
+  color: hsl(229, 6%, 66%);
+}
+.box-menu .box-menu1 {
+  grid-column: 3;
+  grid-row: 1/5;
+  border-radius: 4%;
+  background: hsl(0, 78%, 62%);
+  box-shadow: -1px 6px 10px -2px hsl(229, 6%, 66%);
+}
+.box-menu .box-menu1 .box1 {
+  margin-top: 4px;
+  border-radius: 2%;
+  padding: 20px 20px 0px 20px;
+  font-weight: 600;
+  font-size: 11px;
+  width: 270px;
+  height: 190px;
+  background: rgb(255, 255, 255);
+}
+.box-menu .box-menu1 .box1 img {
+  margin: 30px 0px 0px 180px;
+}
+.box-menu .box-menu2 {
+  grid-column: 3;
+  grid-row: 5/9;
+  border-radius: 5%;
+  background: hsl(34, 97%, 64%);
+  box-shadow: -1px 6px 10px -2px hsl(229, 6%, 66%);
+}
+.box-menu .box-menu2 .box2 {
+  margin-top: 4px;
+  border-radius: 2%;
+  padding: 20px 20px 0px 20px;
+  font-weight: 600;
+  font-size: 10px;
+  width: 270px;
+  height: 190px;
+  background: rgb(255, 255, 255);
+}
+.box-menu .box-menu2 .box2 img {
+  margin: 30px 0px 0px 180px;
+}
+.box-menu .box-menu3 {
+  grid-column: 2/3;
+  grid-row: 3/7;
+  border-radius: 5%;
+  background: hsl(180, 62%, 55%);
+  box-shadow: -1px 6px 10px -2px hsl(229, 6%, 66%);
+}
+.box-menu .box-menu3 .box3 {
+  margin-top: 4px;
+  border-radius: 2%;
+  padding: 20px 0px 0px 20px;
+  font-weight: 600;
+  font-size: 12px;
+  width: 270px;
+  height: 190px;
+  background: rgb(255, 255, 255);
+}
+.box-menu .box-menu3 .box3 img {
+  margin: 30px 0px 0px 180px;
+}
+.box-menu .box-menu4 {
+  grid-column: 4;
+  grid-row: 3/7;
+  border-radius: 5%;
+  background: hsl(212, 86%, 64%);
+  box-shadow: -1px 6px 10px -2px hsl(229, 6%, 66%);
+}
+.box-menu .box-menu4 .box4 {
+  margin-top: 4px;
+  border-radius: 2%;
+  padding: 20px 5px 0px 20px;
+  font-weight: 600;
+  font-size: 11px;
+  width: 270px;
+  height: 190px;
+  background: rgb(255, 255, 255);
+}
+.box-menu .box-menu4 .box4 img {
+  margin: 30px 0px 0px 180px;
+}
+
+.attribution {
+  margin-top: -350px;
+}
+
+.container-mobile-box .box-title {
+  margin-left: 90px;
+}
+.container-mobile-box .box-title .title1 {
+  width: 350px;
+  height: 50px;
+  font-size: 22px;
+  font-weight: 200;
+  color: hsl(229, 6%, 66%);
+}
+.container-mobile-box .box-title .title2 {
+  width: 350px;
+  margin-top: -40px;
+  height: 50px;
+  font-size: 22px;
+  font-weight: 600;
+}
+.container-mobile-box .box-title .title3 {
+  font-weight: 400;
+  color: hsl(229, 6%, 66%);
+  font-size: 12px;
+  margin-top: -20px;
+  margin-bottom: 60px;
+}
+
+.box-menu-global-mobile p {
+  color: hsl(229, 6%, 66%);
+}
+.box-menu-global-mobile .box-menu1-mobile {
+  border-radius: 4%;
+  background: hsl(0, 78%, 62%);
+  width: 270px;
+  padding-top: 3px;
+  margin-bottom: 20px;
+  height: 195px;
+  box-shadow: -1px 10px 10px -2px hsl(229, 6%, 66%);
+}
+.box-menu-global-mobile .box-menu1-mobile .box1 {
+  border-radius: 2%;
+  padding: 20px 20px 0px 20px;
+  font-weight: 600;
+  font-size: 11px;
+  width: 270px;
+  height: 200px;
+  background: rgb(255, 255, 255);
+}
+.box-menu-global-mobile .box-menu1-mobile .box1 img {
+  margin: 30px 0px 0px 180px;
+}
+.box-menu-global-mobile .box-menu2-mobile {
+  border-radius: 5%;
+  background: hsl(34, 97%, 64%);
+  padding-top: 3px;
+  margin-bottom: 20px;
+  box-shadow: -1px 6px 10px -2px hsl(229, 6%, 66%);
+}
+.box-menu-global-mobile .box-menu2-mobile .box2 {
+  border-radius: 2%;
+  padding: 20px 20px 0px 20px;
+  font-weight: 600;
+  font-size: 10px;
+  width: 270px;
+  height: 190px;
+  background: rgb(255, 255, 255);
+}
+.box-menu-global-mobile .box-menu2-mobile .box2 img {
+  margin: 30px 0px 0px 180px;
+}
+.box-menu-global-mobile .box-menu3-mobile {
+  border-radius: 5%;
+  background: hsl(180, 62%, 55%);
+  padding-top: 3px;
+  margin-bottom: 20px;
+  box-shadow: -1px 6px 10px -2px hsl(229, 6%, 66%);
+}
+.box-menu-global-mobile .box-menu3-mobile .box3 {
+  border-radius: 2%;
+  padding: 20px 0px 0px 20px;
+  font-weight: 600;
+  font-size: 12px;
+  width: 270px;
+  height: 190px;
+  background: rgb(255, 255, 255);
+}
+.box-menu-global-mobile .box-menu3-mobile .box3 img {
+  margin: 30px 0px 0px 180px;
+}
+.box-menu-global-mobile .box-menu4-mobile {
+  border-radius: 5%;
+  background: hsl(212, 86%, 64%);
+  padding-top: 3px;
+  margin-bottom: 20px;
+  box-shadow: -1px 6px 10px -2px hsl(229, 6%, 66%);
+}
+.box-menu-global-mobile .box-menu4-mobile .box4 {
+  border-radius: 2%;
+  padding: 20px 5px 0px 20px;
+  font-weight: 600;
+  font-size: 11px;
+  width: 270px;
+  height: 190px;
+  background: rgb(255, 255, 255);
+}
+.box-menu-global-mobile .box-menu4-mobile .box4 img {
+  margin: 30px 0px 0px 180px;
+}
+
+footer {
+  margin-left: 80px;
+}
+footer p {
+  font-size: 12px;
+}/*# sourceMappingURL=styles.css.map */
